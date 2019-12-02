@@ -1,0 +1,158 @@
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.left_container img, .right_container img{
+  width: 100%;
+}
+
+.center_container{
+  border: 1px solid #e6ecf0;
+  min-height: 583px;
+  padding: 0 !important;
+}
+
+.tweet_text{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 1px 1px 22px;
+}
+
+.tweet_header{
+  padding: 10px 1px 10px 10px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.profile_img img{
+  width: 83%;
+  border-radius: 50%;
+}
+
+.rendered_tweets{
+  padding: 7px;
+}
+
+.primary_name{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.secondary_name{
+  font-weight: 400;
+  color: rgb(101, 119, 134);
+}
+
+.tweet_names{
+  margin-top: 8px;
+  padding: 0;
+}
+
+.text_tweet{
+  margin-left: 20px;
+  margin-top: 12px;
+  font-size: 25px;
+}
+
+.time_zone{
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(86, 102, 115);
+}
+
+.likes_and_retweets{
+  margin-left: 20px;
+  padding: 14px 1px 14px 0px;
+  border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0;
+  margin-top: 14px;
+}
+
+#my_btn,#my_btn_1{
+  visibility: hidden;
+}
+
+#my_search_field{
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 11px;
+  height: 38px;
+  border: 1px solid rgb(29, 161, 242);
+  padding-left: 10px;
+}
+
+#my_search_field:active{
+  outline: none !important;
+}
+
+
+
+/* d3-context-menu styles */
+
+.d3-context-menu {
+  position: absolute;
+  display: none;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  min-width: 150px;
+  border: 1px solid #d4d4d4;
+
+  z-index:1200;
+}
+
+.d3-context-menu ul {
+  list-style-type: none;
+  margin: 4px 0px;
+  padding: 0px;
+  cursor: default;
+}
+
+.d3-context-menu ul li {
+  padding: 4px 16px;
+}
+
+.d3-context-menu ul li:hover {
+  background-color: #4677f8;
+  color: #fefefe;
+}
+/* chart styles */
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+svg{
+  margin-left: 25%;
+}
+
+#my_search_field_for_word_cloud{
+  margin: 12px 13px 10px 34px;
+  width: 28%;
+  border-radius: 15px;
+  border: 1px solid #12bce2;
+  height: 43px;
+  padding-left: 15px;
+}
+
+.heading_wordcloud{
+  margin-left: 34px;
+}

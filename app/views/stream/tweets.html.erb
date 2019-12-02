@@ -1,0 +1,21 @@
+<% values = JSON.parse(@results) %>
+<% values.each do |value| %>
+  <div class="individual_tweets">
+    <div class="profile_section row">
+      <div class="profile_img col-md-2"><%= image_tag("#{value['user']['profile_image_url_https']}") %></div>
+      <div class="tweet_names col-md-3">
+        <div class="primary_name"><%= value['user']['name'] %></div>
+        <div class="secondary_name">@ <%= value['user']['screen_name'] %></div>
+      </div>
+    </div>
+    <div class="text_tweet">
+      <%= value['text'].split(/\n/).first %>
+    </div>
+    <div class="time_zone">
+      <span><%= Time.parse(value['created_at']).strftime('%l %p') %></span>  .  <span><%= Date.parse(value['created_at']).strftime('%b %d %Y') %></span>.<!-- <span>Twitter for iPhone</span> -->
+    </div>
+    <div class="likes_and_retweets">
+      <span class="retweets"><%= value['retweet_count'] %> <span>Retweets</span></span>     <span class="likes"><%= value['user']['favourites_count'] %> <span>Likes</span></span>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      var value = document.getElementById("my_search_field").value;
+      console.log(value);
+      $.ajax({url: "stream/search_con?q="+value, type: "GET", success: function(result){
+        $("#div1").html(result);
+      }});
+    });
+
+    input = document.getElementById("my_search_field");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("my_btn").click();
+      }
+    });
+  });
+</script>
+<div class="twitter_main_container row">
+  <div class="left_container col-md-3">
+    <img src="/assets/left_tweet.png"/>
+  </div>
+  <div class="center_container col-md-6">
+    <div class="tweet_header"><span><img src="/assets/arrow.png"></span><span class="tweet_text">Tweet</span></div>
+    <div class="rendered_tweets">
+      <div id="div1"></div>
+    </div>
+  </div>
+  <div class="right_container col-md-3">
+    <div class="search_part">
+      <input type="text" id="my_search_field" name="search_field" placeholder="Search Twitter">
+      <button id="my_btn"></button>
+    </div>
+    <img src="/assets/right_tweet.png"/>
+  </div>
+</div>
