@@ -14,6 +14,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'twitter'
 
 gem 'pry'
+gem 'sentimental'
 gem 'tweetstream'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
