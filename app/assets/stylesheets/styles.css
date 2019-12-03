@@ -69,7 +69,7 @@
   margin-top: 14px;
 }
 
-#my_btn,#my_btn_1{
+#my_btn,#my_btn_1, #analyze_btn{
   visibility: hidden;
 }
 
@@ -144,7 +144,7 @@ svg{
   margin-left: 25%;
 }
 
-#my_search_field_for_word_cloud{
+#my_search_field_for_word_cloud, #my_search_field_for_sentimental_analysis{
   margin: 12px 13px 10px 34px;
   width: 28%;
   border-radius: 15px;
@@ -153,6 +153,18 @@ svg{
   padding-left: 15px;
 }
 
-.heading_wordcloud{
+.heading_wordcloud, .heading_sentimental_analysis{
   margin-left: 34px;
 }
+
+/*styles for sentimental analysis starts*/
+#positive_sentiment,#negative_sentiment{
+  margin-top: 30%;
+    color: #10b310;
+    font-weight: bold;
+    font-size: 16px;
+}
+#negative_sentiment{
+    color: red !important;
+}
+/*styles for sentimental analysis ends*/
