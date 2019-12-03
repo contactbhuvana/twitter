@@ -1,24 +1,60 @@
-# README
+# Mini Twitter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Mini Twitter is a small web application, mainly build to `search` real time tweets and features include `word cloud` and `sentimental analysis` 
 
-Things you may want to cover:
+#### Technology Used
+```
+* Ruby - 2.4.3
+* Rails - 5.2.3
+* d3.js
+* Bootstrap - Design
+```
 
-* Ruby version
+#### Features
 
-* System dependencies
+* Search tweet which you wants to view. User can see the tweets in real time.
 
-* Configuration
+* You can form a word cloud for tweet seach result.
 
-* Database creation
+    ```
+    d3.js used to form word cloud
+    ```
 
-* Database initialization
+* You can analyze sentiment of the tweet.
 
-* How to run the test suite
+    ```
+    gem 'sentimental'
+    d3.js 
+    ```
 
-* Services (job queues, cache servers, search engines, etc.)
+#### How to use the application
 
-* Deployment instructions
+1. Type tweet name in the search box and press enter
 
-* ...
+![](app/assets/home.png)
+
+2. You can able to view list of related tweets
+
+![](app/assets/home.png)
+
+3. Use navigation's in the top right corner
+
+![](app/assets/home.png)
+
+4. Type Tweet name, for which you want to form word cloud.
+
+![](app/assets/home.png)
+
+5. You can able to see formed word cloud
+
+![](app/assets/home.png)
+
+6. Type Tweet name, for which you want to do sentimental analysis.
+
+![](app/assets/home.png)
+
+7. You can able to see sentimental analysis result
+
+![](app/assets/home.png)
+
+-----------
